@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example App</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+  <div>
+    <h2>Product Table</h2>
+    <p>Key in your input to filter the table:</p>
+
+    <input type="text" id="myinput" placeholder="Search..." title="Type in something">
+
+    <p>Click on the header of a column to sort the table:</p>
+
+    <table>
+      <thead><tr>
+        <th><span id="name" class="w3-button table-column">Name <i class="caret"></i></span></th>
+        <th><span id="classStd" class="w3-button table-column">ClassStd <i class="caret"></i></span></th>
+        <th><span id="section" class="w3-button table-column">Section <i class="caret"></span></i></th>
+        <th><span id="sub1" class="w3-button table-column">Sub1 <i class="caret"></i></span></th>
+        <th><span id="sub2" class="w3-button table-column">Sub2 <i class="caret"></i></span></th>
+        <th><span id="sub3" class="w3-button table-column">Sub3 <i class="caret"></i></span></th>
+      </tr></thead>
+      <tbody id="mytable"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

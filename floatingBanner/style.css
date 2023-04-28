@@ -1,0 +1,49 @@
+.light{
+
+    width: 100px;
+    height: 30px;
+    border: 10px #0000FF solid;
+    transform: translate(20%,20%);
+    background-image: url(image5.jpg);
+    background-size: 100% 100%;
+    animation: slider 20s infinite linear ;
+    height: 380px;
+    width: 70%;
+}
+
+#cloud {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 100px;
+    content: '';
+    opacity: 1;
+    position: relative;
+    top: 50px;
+    left: 175px;
+    color: #eee;
+    animation: float 3.5s infinite ease-in-out;
+  }
+
+@keyframes slider {
+    0% {background-image: url(image1.jpg);}
+    30% {background-image: url(image2.jpg);}
+    60% {background-image: url(image3.jpg);}
+    80% {background-image: url(image4.jpg);}
+}
+
+@keyframes float {
+    50% {
+        top: 80px;
+    }    
+    100% { 
+        top: 50px;
+    }
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+body{
+    background-color: rgba(255, 99, 71, 0.5);
+}
